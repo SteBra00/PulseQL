@@ -287,7 +287,7 @@ if __name__=='__main__':
     parser.add_argument('-sf', '--server-file-log', nargs='?', metavar='filelog_path', help='Specific logfile in ServerMode (Default is disabled)')
     parser.add_argument('-sb', '--server-buffer-size', nargs='?', metavar='buffer_size', type=int, default=1024, help='Spacific size of socket buffer')
     parser.add_argument('-j', '--json', action='store_true', help='Specific if encode output to JSON format')
-    parser.add_argument('-f', '--file', metavar='path.sql', nargs='*', help="Load file's querys on database (Files are loads before start Console or Server Modes")
+    parser.add_argument('-f', '--file', metavar='path.sql', nargs='*', help="Load file's querys on database (Files are loads before start Console or Server Modes)")
 
     args = parser.parse_args(sys.argv[1:])
 
