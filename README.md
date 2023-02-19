@@ -42,10 +42,25 @@ options:
 ### Linux
 1. Update apt-get ```sudo apt-get update```
 2. Install Python3 ```sudo apt-get install python3 python3-pip```
-3. Install dipendences ```python3 -m pip install -r requirments.txt
-4. Run Console #servermode
-4. Run Server
----  
+3. Test *Python* ```python3 --version``` or ```python --version```
+4. Test *PIP* ```python3 -m pip```
+5. Install requirments ```python3 -m pip install -r requirments.txt```
+6. Run ```python3 Sqlite3ToolServer.py ...```
+### Windows
+1. Install Python3 from [Official Web Site](https://www.python.org/downloads/)
+2. Include "pip" on installation
+3. Test *Python* on *CMD* ```python --version``` or ```py --version``` (If not found, try ```python3``` or ```py3```)
+4. Test *PIP* on *CMD* ```python -m pip``` or ```python3 -m pip```
+5. Install requirments ```python -m pip install -r requirments.txt```
+6. Run ```python Sqlite3ToolServer.py ...```
+### MacOS
+1. Install Python3 from [Official Web Site](https://www.python.org/downloads/)
+2. Include "pip" on installation
+3. Test *Python* ```python3 --version``` or ```python --version```
+4. Test *PIP* ```python3 -m pip```
+5. Install requirments ```python3 -m pip install -r requirments.txt```
+6. Run ```python3 Sqlite3ToolServer.py
+---
 ## ServerMode
 ### What is it
 The tool in server mode offers a TCP\IP sockets, which only requires a query and returns the result in the form of a string or json (recommended for clients that do not support the 'tuple' data structure)
@@ -93,6 +108,5 @@ python3 Sqlite3ToolServer.py -c -db mydatabase.db -f create.sql init.sql -ac -j
 
 ---
 ## TODO
-* Complete docuemntation for installation
 * SSL\TLC connections
 * File.style for setting CLI colors
