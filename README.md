@@ -1,7 +1,22 @@
-# SqliteToolServer
+# PulseQL
 
 
-A simple and Powerful tool for Sqlite3
+A simple and Powerful tool for SQL
+
+![Languages Top](https://img.shields.io/github/languages/top/SteBra00/PulseQL)
+![License](https://img.shields.io/github/license/SteBra00/PulseQL)
+![Next Version:0.5.0](https://img.shields.io/badge/Next%20Version-0.5.0-purple)
+![Version:0.4.1](https://img.shields.io/badge/Stable-0.4.1-blue)
+![Sqlite:OK](https://img.shields.io/badge/Sqlite-OK-green)
+![MySql:InProgress](https://img.shields.io/badge/MySql-InProgress-yellow)
+![Oracle:ComingSoon](https://img.shields.io/badge/Oracle-ComingSoon-red)
+![Microsoft SQL Server:ComingSoon](https://img.shields.io/badge/Microsoft%20SQL%20Server-ComingSoon-red)
+![PostgreSQL:ComingSoon](https://img.shields.io/badge/PostgreSQL-ComingSoon-red)
+![IBM DB2:ComingSoon](https://img.shields.io/badge/IBM%20DB2-ComingSoon-red)
+![SAP HANA:ComingSoon](https://img.shields.io/badge/SAP%20HANA-ComingSoon-red)
+![Teradata:ComingSoon](https://img.shields.io/badge/Teradata-ComingSoon-red)
+![Amazon Aurora:ComingSoon](https://img.shields.io/badge/Amazon%20Aurora-ComingSoon-red)
+
 
 
 > V.0.4.1
