@@ -1,5 +1,5 @@
 TOOL_NAME = 'PulseQL'
-TOOL_VERSION = 'v.0.5.0 beta'
+TOOL_VERSION = 'v.0.5.1 beta'
 
 
 import sys
@@ -20,7 +20,7 @@ from prompt_toolkit.styles import style_from_pygments_cls
 from prompt_toolkit.auto_suggest import AutoSuggest, Suggestion
 from pygments.style import Style
 from pygments.lexer import RegexLexer
-from pygments.lexers.sql import SqlLexer
+#from pygments.lexers.sql import SqlLexer
 from pygments.token import (
     Keyword,
     Name,
@@ -41,10 +41,11 @@ class Utils:
         console.print(f'{TOOL_NAME} {TOOL_VERSION} {mode} is running.')
 
     @staticmethod
-    def queryExecute(database:sqlite3.Connection, query:str, alternativeSql:Union[Dict[str, str], None], toJson:bool=False) -> Any:
+    def queryExecute(database:sqlite3.Connection, query:str, alternativeSql:Optional[Dict[str, str]], toJson:bool=False) -> Any:
         result = None
         try:
-            query = Utils.convertQuery(query, alternativeSql) if alternativeSql else query
+            if alternativeSql:
+                query = Utils.convertQuery(query, alternativeSql) if alternativeSql else query
             cursor = database.cursor()
             cursor.execute(query)
             result = cursor.fetchall()
