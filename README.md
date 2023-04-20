@@ -124,4 +124,9 @@ python3 Sqlite3ToolServer.py -c -db mydatabase.db -f create.sql init.sql -ac -j
 ---
 ## TODO
 * SSL\TLC connections
-* File.style for setting CLI colors
+* File style for setting CLI colors
+* Read multiline querys from file
+* View Select querys into tables (ConsoleMode)
+* Add function "_error" for show detail of last exception
+* Add function "_reload" for reinit database with file
+* Add function "_drop" for delete file.db and close the tool
